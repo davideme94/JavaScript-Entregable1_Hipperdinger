@@ -1,0 +1,130 @@
+/* General */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #613a24; /* Color marrón de fondo */
+  color: white;
+}
+
+/* Header */
+.header {
+  background-color: #007bc1; /* Azul para el título */
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Separación entre elementos */
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Cooper Black', sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.header-image {
+  height: 60px; /* Tamaño de las imágenes */
+  width: auto;
+}
+
+/* Main Section */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative; /* Para posicionar el capibara */
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; /* Espaciado entre el calculador y otros elementos */
+}
+
+/* Calculadora */
+.calculator {
+  background: #8c5c2f;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+}
+
+.calculator h2 {
+  font-family: 'Cooper Black', sans-serif;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f5e1c1; /* Beige */
+  color: #333;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bc1;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #005f91;
+}
+
+.note {
+  font-size: 0.8rem;
+  color: #f0dab1;
+  margin-top: 5px;
+}
+
+/* Imagen lateral */
+.image-section {
+  position: absolute;
+  left: 10px; /* Empuja la imagen más a la izquierda */
+  top: 150px; /* Ajusta la altura */
+}
+
+.side-image {
+  height: 300px; /* Ajusta el tamaño según lo necesites */
+  width: auto;
+  border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}

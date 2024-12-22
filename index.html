@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MateFijo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <img src="static/images/1matesuli.png" alt="Mate" class="header-image">
+      <h1>MATEFIJO</h1>
+      <img src="static/images/matemate.png" alt="Mate" class="header-image">
+    </div>
+  </header>
+  
+  <main class="main">
+    <div class="content-container">
+      
+      <section class="image-section">
+        <img src="static/images/capibara.png" alt="Capibara" class="side-image">
+      </section>
+      
+      
+      <section class="calculator">
+        <h2>CALCULA TU PLAZO FIJO</h2>
+        <form id="fixedDepositForm">
+          <div class="form-group">
+            <label for="amount">Ingrese el monto:</label>
+            <input type="number" id="amount" min="1" placeholder="Monto en pesos" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="bank">Elija banco:</label>
+            <select id="bank" required>
+              <option value="" disabled selected>Selecciona un banco</option>
+              <option value="nacion">Banco Nación Argentina</option>
+              <option value="provincia">Banco Provincia</option>
+              <option value="bbva">BBVA</option>
+              <option value="macro">Banco Macro</option>
+              <option value="hipotecario">Banco Hipotecario</option>
+              <option value="brubank">Brubank</option>
+              <option value="galicia">Banco Galicia</option>
+              <option value="patagonia">Banco Patagonia</option>
+              <option value="icbc">ICBC</option>
+              <option value="ciudad">Banco Ciudad</option>
+              <option value="comafi">Banco Comafi</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="days">Plazo:</label>
+            <input type="number" id="days" min="30" max="370" placeholder="Días (30 - 370)" required>
+            <p class="note">El mínimo de días a ingresar es 30 y el máximo 370.</p>
+          </div>
+
+          <div class="results">
+            <p><strong>Intereses ganados:</strong> <span id="interest">-</span></p>
+            <p><strong>Monto total:</strong> <span id="totalAmount">-</span></p>
+          </div>
+
+          <button type="button" id="calculateButton">Calcular</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2024 MateFijo</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
